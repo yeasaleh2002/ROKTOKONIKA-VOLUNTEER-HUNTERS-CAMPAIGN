@@ -1,13 +1,19 @@
 import React from 'react';
-import './Header.css'
+import './Header.css';
 
 const Header = () => {
     return (
        
-           
-            <nav className="navbar navbar-expand-lg navbar-dark bg-info navbar-style">
+           <div className=" bg-info p-4 navbar-style">
+ 
+  
+           <h1>ROKTOKONIKA VOLUNTEER HUNTERS CAMPAIGN</h1>
+         
+
+        <div>
+            <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/roktokonika">ROKTOKONIKA VOLUNTEER HUNTERS CAMPAIGN</a>
+          <a className="navbar-brand" href="/roktokonika">Roktokonika</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -22,16 +28,21 @@ const Header = () => {
                        
             </ul>
 
-            
-            <form className="d-flex mx-5">
+
+            <form className="d-flex flex-fill mx-5">
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
               <button className="btn btn-danger" type="submit">Search</button>
             </form>
           </div>
         </div>
+          
       </nav>
+           </div>
+           <div>
+            <h1> Total Collection Need :  $ 100000 </h1>
+         </div>
 
-              
+         </div>     
         
     );
 };

@@ -1,4 +1,5 @@
 import './App.css';
+import AllVolunteers from './components/AllVolunteers/AllVolunteers';
 import Header from './components/Header/Header';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
      
 
       <Header></Header>
+      <AllVolunteers></AllVolunteers>
 
      
       
