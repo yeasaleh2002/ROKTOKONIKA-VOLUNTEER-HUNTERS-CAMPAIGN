@@ -1,3 +1,4 @@
+/* volunteer-picture style  */
 .volunteer-picture img{
     width: 200px;
     height: 200px;
@@ -5,7 +6,16 @@
     border-radius: 50%;
 }
 
+ /* card-design style  */
 .card-design{
-    background-color: whitesmoke;
+    background-color: rgb(243, 236, 229);
     
+}
+
+
+/* button style */
+.button-style:hover{
+
+    background-color: tomato;  
+    border: none;
 }

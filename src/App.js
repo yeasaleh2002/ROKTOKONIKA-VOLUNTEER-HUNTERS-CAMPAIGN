@@ -6,11 +6,9 @@ function App() {
   return (
     <div className="App">
      
-
       <Header></Header>
       <AllVolunteers></AllVolunteers>
-
-     
+    
       
     </div>
   );

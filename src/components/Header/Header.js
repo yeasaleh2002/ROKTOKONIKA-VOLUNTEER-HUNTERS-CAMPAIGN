@@ -1,14 +1,16 @@
 import React from 'react';
 import './Header.css';
 
+// header component
 const Header = () => {
     return (
        
            <div className=" bg-info p-4 navbar-style">
  
-  
-           <h1>ROKTOKONIKA VOLUNTEER HUNTERS CAMPAIGN</h1>
+           {/* Community name*/}
+           <h1 className =" text-danger">ROKTOKONIKA VOLUNTEER HUNTERS CAMPAIGN</h1>
          
+         {/* navbar declare */}
 
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark">
@@ -28,7 +30,7 @@ const Header = () => {
                        
             </ul>
 
-
+             {/* search button and form */}
             <form className="d-flex flex-fill mx-5">
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
               <button className="btn btn-danger" type="submit">Search</button>
@@ -38,8 +40,10 @@ const Header = () => {
           
       </nav>
            </div>
+
+           {/* Community budget  */}
            <div>
-            <h1> Total Collection Need :  $ 100000 </h1>
+            <h1> Total Collection Need (Budget) :  $ 100000 </h1>
          </div>
 
          </div>     

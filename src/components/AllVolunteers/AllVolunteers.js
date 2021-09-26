@@ -1,23 +1,27 @@
 import React, { useEffect, useState } from 'react';
-// import VolunteerCart from '../VolunteerCart/VolunteerCart';
+import VolunteerCart from '../VolunteerCart/VolunteerCart';
 import VolunteersDetails from '../VolunteersDetails/VolunteersDetails';
 import './AllVolunteers.css';
 
 const AllVolunteers = () => {
 
+    // volunteers state declare
    const [volunteers, setVolunteers] = useState([]);
 
-/*    const [ volunteerCart , setVolunteerCart ] = useState([]);
+   // volunteerCart state declare
+   const [volunteerCart, setVolunteerCart] = useState([]);
 
 
-   const handleAddVolunteer=(volunteer)=>{
+ // add volunteer button event handler 
+  const handleAddVolunteer = (volunteer) => {
 
-    const newVolunteerCart=[ ...volunteerCart  , volunteer ]
-    setVolunteerCart(newVolunteerCart)
-} */
+    const newVolunteerCart = [...volunteerCart, volunteer];
+    setVolunteerCart(newVolunteerCart);
+
+}
 
 
-
+ // fake data load
    useEffect(() => {
        fetch('/volunteer.json')
        .then(response => response.json())
@@ -26,8 +30,11 @@ const AllVolunteers = () => {
 
 
     return (
-        <div>
+        <div className = "allVolunteers-style">
              <div className="row">
+
+                 {/* VoluteersDetails part dynamicly accessing */}
+
                  <div className="col-md-9">
                     <div className="row  g-4 container m-3">
                         {
@@ -35,8 +42,7 @@ const AllVolunteers = () => {
 
                                 key = {volunteer._id}
                                  volunteer= {volunteer}
-
-                                //  handleAddVolunteer={handleAddVolunteer}
+                                 handleAddVolunteer = {handleAddVolunteer}
                                 >
 
                                 </VolunteersDetails>)
@@ -44,16 +50,14 @@ const AllVolunteers = () => {
                     </div>
                  </div>
 
+           {/* VoluteerCart part dynamicly accessing */}
+                 <div className="col-md-3">                   
 
-
-                 <div className="col-md-3">
+                     <VolunteerCart                    
+                     volunteerCart ={volunteerCart}                    
+                     >
+                     </VolunteerCart>
               
-                         {/*  <VolunteerCart  
-                          
-                          volunteerCart={volunteerCart}>
-
-                          </VolunteerCart> */}
-
                  </div>
 
              </div>
