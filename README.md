@@ -1,5 +1,22 @@
 # Getting Started with Create React App
 
+
+# Project Name : 
+ROKTOKONIKA VOLUNTEER HUNTERS CAMPAIGN
+
+# Project live link:
+https://roktokonika.netlify.app/
+
+# Project feature:
+
+1. The project is create to find volunteers for good social work.
+
+2. Our budget for social development is $100,000
+
+3. Those who will volunteer will have to give their name, surname, address, age, email and donation. There will be a button below the details of each volunteer. Button event handler is used.
+
+4. Clicking on the button will add his donation to the cart on the right and the number of times he clicks on the button will be the same amount of donation. How many people have donated will also be written. And all donations will be total. And the names of those who have donated will remain.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

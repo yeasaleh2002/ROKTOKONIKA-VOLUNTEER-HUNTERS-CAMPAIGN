@@ -17,7 +17,7 @@ const VolunteerCart = (props) => {
         <div className="pt-5 pe-2">
            <div className="volunteerCart-style card shadow-lg">
                 
-            <h3>Added Volunteer: {props.volunteerCart.length}</h3>
+            <h3><i className="fas fa-user text-primary"></i> Added Volunteer: {props.volunteerCart.length}</h3>
             <br />
             <h2>Total Collection: ${total}</h2>
             <br />
