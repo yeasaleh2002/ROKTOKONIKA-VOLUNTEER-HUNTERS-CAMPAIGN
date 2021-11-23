@@ -1,6 +1,3 @@
-# Getting Started with Create React App
-
-
 # Project Name : ROKTOKONIKA VOLUNTEER HUNTERS CAMPAIGN
 
 
@@ -16,6 +13,9 @@
 3. Those who will volunteer will have to give their name, surname, address, age, email and donation. There will be a button below the details of each volunteer. Button event handler is used.
 
 4. Clicking on the button will add his donation to the cart on the right and the number of times he clicks on the button will be the same amount of donation. How many people have donated will also be written. And all donations will be total. And the names of those who have donated will remain.
+
+# Getting Started with Create React App
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
